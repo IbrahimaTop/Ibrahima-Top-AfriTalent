@@ -1,56 +1,181 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+     <link rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <title>Contact</title>
 </head>
 <body>
-    <header>
-     <nav id="navbar" class="navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
 
-            <a href="index.html" class="navbar-barre">AfriTalent</a>
+    <header> 
+  <nav class="navbar navbar-expand-lg navbar-light bg-transparent shadow-sm fixed-top"> 
+<div class="container"> 
+<a class="navbar-brand fw-bold text-primary" href="index.html">AfriTalent</a> 
+<button class="navbar-toggler" type="button" 
+data-bs-toggle="collapse" 
+data-bs-target="#navMenu" 
+aria-controls="navMenu" 
+aria-expanded="false" 
+aria-label="Toggle navigation"> 
+<span class="navbar-toggler-icon"></span> 
+</button> 
+<div class="collapse navbar-collapse" id="navMenu"> 
+<ul class="navbar-nav ms-auto"> 
+<li class="nav-item"><a class="nav-link active" 
+href="index.html">Accueil</a></li> 
+<li class="nav-item"><a class="nav-link" 
+href="freelances.html">Freelances</a></li> 
+<li class="nav-item"><a class="nav-link" 
+href="tarifs.html">Tarifs</a></li> 
+<li class="nav-item"><a class="nav-link" href="about.html">A 
+propos</a></li> 
+<li class="nav-item"><a class="nav-link" 
+href="blog.html">Blog</a></li> 
+<li class="nav-item"><a class="nav-link" 
+href="contact.html">Contact</a></li> 
+</ul> 
+</div> 
+</div> 
+</nav>  
+    </header>
+<!-- Contenu principal -->
 
-            <button class="navbar-basculeur" type="button">
-                <span class="navbar-basculeur-automatique">
-                    
-                </span>
-                  
-           </button>
-    
-        <div>
-            <ul class="navbar-nav">
-                <li class="nav-element"> <a class="nav-lien active" href="index.html">Acceuil</a></li>
-                <li class="nav-element"> <a class="nav-lien" href="freelances.html">freelances</a></li>
-                <li class="nav-element"> <a class="nav-lien" href="tarifs.html">tarifs</a></li>
-                <li class="nav-element"><a class="nav-lien" href="about.html">A propos</a></li>
-                <li class="nav-element"><a class="nav-lien" href="contact.html">contact</a></li>
-            </ul>
+<!-- Contenu principal --> 
+<section class="contact-hero text-white d-flex align-items-center">
+    <div class="container text-center">
+        <h1 class="fw-bold">Contactez-nous</h1>
+        <p class="lead">Une question ? Nous sommes là pour vous aider</p>
+    </div>
+</section>
+
+<section class="container my-5">
+    <div class="row g-5">
+        <div class="col-md-7">
+            <div class="contact-card p-4">
+                <h4 class="mb-4">Envoyer un message</h4>
+                <form id="contactForm" novalidate>
+                    <div class="mb-3">
+                        <label class="form-label">Nom</label>
+                        <input type="text" class="form-control" id="nom">
+                        <small class="text-danger" id="errorNom"></small>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Prénom</label>
+                        <input type="text" class="form-control" id="prenom">
+                        <small class="text-danger" id="errorPrenom "></small>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control">
+                        <small class="text-danger" id="errorEmail"></small>
+                    </div>
+
+                     <div class="mb-3">
+                        <label class="form-label">Sujet</label>
+                       <select class="form-select" id="Sujet">
+                        <option value="">Choisir...</option>
+                        <option value="">Support</option>
+                        <option value="">Partenariat</option>
+                        <option value="">Information</option>
+                       </select>
+
+                       <small class="text-danger" id="errorSujet"></small>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="5"></textarea>
+                        <small class="text-danger" id="errorMessage"></small>
+                    </div>
+
+                    <button class="submit" class="btn btn-primary w-100">Envoyer</button>
+                </form>
+
+                <div id="succesMessage" class="alert alert-succes mt-3 d-none">
+                    votre message a été envoyé avec succés ! 
+                </div>
             </div>
         </div>
-    </nav>   
-   </header>
-   <main>
-    <h1>contact</h1>
-    <p>
-        Contactez nous
-    </p>
-    <form>
-        <input type="text" placeholder="Nom">
-        <input type="number" placeholder="Numero">
-        <input type="email" placeholder="Email">
-        <textarea placeholder="sms"></textarea>
-        <button>Envoyez</button>
-    </form>
 
-   </main>
-   
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    </script>
-    <script src="js/main.js">
-    </script>
+        <div class="col-md-5">
+            <div class="contact-info p-4">
+                <h5 class="mb-3">Informations</h5>
+                <p><i class="bi bi-envelope"></i>afritalent@gmail.com</p>
+                <p><i class="bi bi-telephone"></i>+221 77 444 33 22</p>
+                <p><i class="bi bi-geo-alt"></i>Dakar, Sénégal</p>
+
+                <hr>
+                <iframe src="" width="100%" height="250"
+                style="border: 0;" allowfullscreen>
+
+                </iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-transparent text-light py-4"> 
+   <div class="container">
+    <div class="row d-flex align-items-center text-center">
+
+        <div class="col-md-4 mb-4">
+            <h5 class="text-uppercase fw-bold">Afritalent</h5>
+            <p>La plateforme qui connecte les talents africains aux 
+                opportunités freelances dans le monde entier
+            </p>
+        </div>
+
+        <div class="col-md-2 mb-4">
+            <h5 class="fw-bold">Liens</h5>
+            <ul class="list-unstyled">
+               <li><a href="index.html" class="text-light text-decoration-none">Acceuil</a></li>
+               <li><a href="about.html" class="text-light text-decoration-none"></a>A propos</li>
+               <li><a href="freelances.html" class="text-light text-decoration-none"></a>Freelance</li>
+               <li><a href="tarifs.html" class="text-light text-decoration-none"></a>Tarifs</li>
+               <li><a href="blog.html" class="text-light text-decoration-none"></a>Blog</li>
+               <li><a href="contact.html" class="text-light text-decoration-none"></a>Contact</li>
+            </ul>
+        </div>
+
+
+       <div class="col-md-3 mb-4">
+        <h6 class="fw-bold">Support</h6>
+        <ul class="list-unstyled">
+            <li><a href="" class="text-light text-decoration-none">Aide</a></li>
+            <li><a href="" class="text-light text-decoration-none">Contact</a></li>
+            <li><a href="" class="text-light text-decoration-none">Condition</a></li>
+        </ul>
+       </div>
+
+       <div class="d-flex justify-content-center align-items-center gap-3">
+        <h6>Suivez-nous</h6>
+        <a href="" class="text-light me-3"><i class="bi bi-facebook fs-2"></i></a>
+         <a href="" class="text-light me-3"><i class="bi bi-twitter fs-2"></i></a>
+          <a href="" class="text-light me-3"><i class="bi bi-instagram fs-2"></i></a>
+           <a href="" class="text-light me-3"><i class="bi bi-linkedin fs-2"></i></a>
+       </div>
+      </div>
+
+      <hr class="border-light">
+      
+      <div>
+        <small>&copy; 2025 Afrique. Tous droits reserves.</small>
+      </div>
+    </div>
+</footer> 
+
+
+
+<script 
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+></script> 
+<script src="js/main.js"></script>
     
 </body>
 </html>

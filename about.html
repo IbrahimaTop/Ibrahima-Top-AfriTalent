@@ -3,51 +3,268 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>A propos</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=poppins:whgt@300;400;600;800&display=swap">
+
 </head>
 <body>
-    <header>
-     <nav id="navbar" class="navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
+      
+<header>
+<nav  class="navbar navbar-expand-lg navbar-light bg-transparent shadow-sm fixed-top"> 
+<div class="container"> 
+<a class="navbar-brand fw-bold text-primary" href="index.html">AfriTalent</a> 
+<button class="navbar-toggler" type="button" 
+data-bs-toggle="collapse" 
+data-bs-target="#navMenu" 
+aria-controls="navMenu" 
+aria-expanded="false" 
+aria-label="Toggle navigation"> 
+<span class="navbar-toggler-icon"></span> 
+</button> 
+<div class="collapse navbar-collapse" id="navMenu"> 
+<ul class="navbar-nav ms-auto"> 
+<li class="nav-item"><a class="nav-link active" 
+href="index.html">Accueil</a></li> 
+<li class="nav-item"><a class="nav-link" 
+href="freelances.html">Freelances</a></li> 
+<li class="nav-item"><a class="nav-link" 
+href="tarifs.html">Tarifs</a></li> 
+<li class="nav-item"><a class="nav-link" href="about.html">A 
+propos</a></li> 
+<li class="nav-item"><a class="nav-link" 
+href="blog.html">Blog</a></li> 
+<li class="nav-item"><a class="nav-link" 
+href="contact.html">Contact</a></li> 
+</ul> 
+</div> 
+</div> 
+</nav> 
+</header>
 
-            <a href="index.html" class="navbar-barre">AfriTalent</a>
+<!-- Contenu principal -->
+<section class="about-hero text-white d-flex align-items-center">
+  <div  class="container text-center">
+    <h1 class="fw-bold display-4">A propos</h1>
+    <p class="lead">Construis l'avenir du freelancing en Afrique</p>
+  </div>
+</section>
 
-            <button class="navbar-basculeur" type="button">
-                <span class="navbar-basculeur-automatique">
-                    
-                </span>
-                  
-           </button>
+<section class="about-history">
+  <div class="container">
+    <div class="row align-items-center g-5">
+
+    <div class="col-md-6">
+      <h2 class="fw-bold">Notre histoire</h2>
+      <p class="text-muted">AfriTalent est une plateforme née d'une vision : Connecter
+        les talents africains aux opportunités mondiales.
+        Nous croyons en un ecosystéme ou chaque freelance
+        peut vivre de ses compétences.
+      </p>
+
+      <p class="text-muted">Aujourd'hui nous accompagnons des milliers de freelances
+        dans leur croissance professionnelle grace à des projets 
+        de qualités et une Visibilité internationale.
+      </p>
+    </div>
     
-        <div>
-            <ul class="navbar-nav">
-                <li class="nav-element"> <a class="nav-lien active" href="index.html">Acceuil</a></li>
-                <li class="nav-element"> <a class="nav-lien" href="freelances.html">freelances</a></li>
-                <li class="nav-element"> <a class="nav-lien" href="tarifs.html">tarifs</a></li>
-                <li class="nav-element"><a class="nav-lien" href="about.html">A propos</a></li>
-                <li class="nav-element"><a class="nav-lien" href="contact.html">contact</a></li>
-            </ul>
-            </div>
-        </div>
-    </nav>   
-   </header>
-   
-   <main>
-    <h1>A propos</h1>
-    <section>
-        <h2>Notre objectif</h2>
-        <p>
-            Favoriser l'insertion dans le travail indépendant
-        </p>
-    </section>
-   </main>
+ <div class="col-md-6 text-center"> 
+  <div class="history-img-wrapper">
+      <img src="https://images.unsplash.com/photo-1622258415402-d6f597973b03?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODB8fGZyZWVsYW5jZSUyMHRlYW18ZW58MHx8MHx8fDA%3D" class="image-fluid" alt="AfriTalent team">
+    </div>
+    </div>
+  </div>
+ </div>
+</section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    </script>
-    <script src="js/main.js">
-    </script>
+<section class="container my-5">
+  <h2 class="text-center fw mb-5">Nos valeurs</h2>
+  <div class="row g-4">
+    <div class="col-md-3">
+      <div class="value-card text-center p-4">
+        <i class="bi bi-lightning-charge fs-2 text-primary"></i>
+        <h5 class="mt-3">Innovation</h5>
+        <p class="text-muted">Créer des solutions modernes pour les freelances africaines</p>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="value-card text-center p-4">
+        <i class="bi bi-people fs-2 text-primary"></i>
+        <h5 class="mt-3">Accéssibilté</h5>
+        <p class="text-muted">Donnez des opportunités à tous, sans barriére</p>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="value-card text-center p-4">
+        <i class="bi bi-star fs-2 text-primary"></i>
+        <h5 class="mt-3">Communaté</h5>
+        <p class="text-muted">Une plateforme centrée sur l'humain et la collaboration.</p>
+      </div>
+    </div>
+
+    <div  class="col-md-3" >
+      <div class="value-card text-center p-4">
+        <i class="bi bi-star fs-2 text-primary"></i>
+        <h5  class="mt-3">Excellence</h5>
+        <p class="text-muted">Nous visons la qualité dans chaque projet.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="container my-5 text-dark">
+  <h2 class="text-center fw-bold mb-5">Notre équipe</h2>
+  <div class="row text-center g-4">
+
+    <div class="col-md-3  col-sm-6">
+      <div class="team-card">
+        <img src="https://images.unsplash.com/photo-1600180758890-6b94519a8ba6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZSUyMHBob3RvfGVufDB8fDB8fHww" class="team-img" alt="">
+        <h6 class="mt-3">Seydou Diao</h6>
+        <small class="text-muted">CEO</small>
+        <div class="mt-2">
+          <i class="bi bi-linkedin"></i>
+          <i class="bi bi-twitter"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6">
+      <div class="team-card"></divb>
+        <img src="https://images.unsplash.com/photo-1619895862022-09114b41f16f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cHJvZmlsZSUyMHBob3RvfGVufDB8fDB8fHww" class="team-img" alt="">
+        <h6 class="mt-3">Fatou Sy</h6>
+        <small class="text-muted">CTO</small>
+        <div class="mt-2">
+          <i class="bi bi-linkedin"></i>
+          <i class="bi bi-twitter"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3  col-sm-6">
+      <div class="team-card">
+        <img src="https://images.unsplash.com/photo-1584999734482-0361aecad844?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fHByb2ZpbGUlMjBwaG90b3xlbnwwfHwwfHx8MA%3D%3D" class="team-img" alt="">
+        <h6 class="mt-3">Moustapha Fall</h6>
+        <small class="text-muted">Lead Désigner</small>
+        <div class="mt-2">
+          <i class="bi bi-linkedin"></i>
+          <i class="bi bi-twitter"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3  col-sm-6">
+      <div class="team-card">
+        <img src="https://images.unsplash.com/photo-1701615004837-40d8573b6652?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGF2YXRhcnxlbnwwfHwwfHx8MA%3D%3D" class="team-img" alt="">
+        <h6 class="mt-3">Alima Ka</h6>
+        <small class="text-muted">Marketing</small>
+        <div class="mt-2">
+          <i class="bi bi-linkedin"></i>
+          <i class="bi bi-twitter"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="container my-5">
+  <h2 class="text-center fw-bold mb-5" >Chiffres clés</h2>
+  <div class="row g-4 text-center">
+    <div class="col-md-3">
+      <div class="bento-card">
+        <h2>0</h2>
+        <p>Freelance actif</p>
+      </div>
+    </div>
+
+     <div class="col-md-3">
+      <div class="bento-card">
+        <h2>0</h2>
+        <p>Projet réalisé</p>
+      </div>
+    </div>
+
+     <div class="col-md-3"">
+      <div class="bento-card">
+        <h2>0</h2>
+        <p>Pays couvert</p>
+      </div>
+    </div>
+
+     <div class="col-md-3">
+      <div class="bento-card">
+        <h2>0</h2>
+        <p>% Satisfaction</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="bg-transparent text-light py-4"> 
+   <div class="container">
+    <div class="row d-flex align-items-center text-center">
+
+        <div class="col-md-4 mb-4">
+            <h5 class="text-uppercase fw-bold">Afritalent</h5>
+            <p>La plateforme qui connecte les talents africains aux 
+                opportunités freelances dans le monde entier
+            </p>
+        </div>
+
+        <div class="col-md-2 mb-4">
+            <h5 class="fw-bold">Liens</h5>
+            <ul class="list-unstyled">
+               <li><a href="index.html" class="text-light text-decoration-none">Acceuil</a></li>
+               <li><a href="about.html" class="text-light text-decoration-none"></a>A propos</li>
+               <li><a href="freelances.html" class="text-light text-decoration-none"></a>Freelance</li>
+               <li><a href="tarifs.html" class="text-light text-decoration-none"></a>Tarifs</li>
+               <li><a href="blog.html" class="text-light text-decoration-none"></a>Blog</li>
+               <li><a href="contact.html" class="text-light text-decoration-none"></a>Contact</li>
+            </ul>
+        </div>
+
+
+       <div class="col-md-3 mb-4">
+        <h6 class="fw-bold">Support</h6>
+        <ul class="list-unstyled">
+            <li><a href="" class="text-light text-decoration-none">Aide</a></li>
+            <li><a href="" class="text-light text-decoration-none">Contact</a></li>
+            <li><a href="" class="text-light text-decoration-none">Condition</a></li>
+        </ul>
+       </div>
+
+       <div class="d-flex justify-content-center align-items-center gap-3">
+        <h6>Suivez-nous</h6>
+        <a href="" class="text-light me-3"><i class="bi bi-facebook fs-2"></i></a>
+         <a href="" class="text-light me-3"><i class="bi bi-twitter fs-2"></i></a>
+          <a href="" class="text-light me-3"><i class="bi bi-instagram fs-2"></i></a>
+           <a href="" class="text-light me-3"><i class="bi bi-linkedin fs-2"></i></a>
+       </div>
+      </div>
+
+      <hr class="border-light">
+      
+      <div>
+        <small>&copy; 2025 Afrique. Tous droits reserves.</small>
+      </div>
+    </div>
+</footer> 
+
+
+
+<script 
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+</script> 
+
+<script src="js/main.js"></script>
+
+
     
 </body>
 </html>

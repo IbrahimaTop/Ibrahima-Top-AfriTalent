@@ -1,0 +1,235 @@
+:root{
+    --primary: #08197c;
+    --secondary: #17383e;
+    --dark: rgb(136, 136, 140);
+    --light:  rgba(64, 122, 131, 0.8);
+    --text: #f7f7f7;
+    --radius: 16px;
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    --gradient: linear-gradient(133deg, var(--primary), var(--secondary));
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--light);
+    color: var(--text);
+    padding-top: 70px;
+   
+}
+.navbar{
+    background: #fcf9f9;
+  backdrop-filter: blur(8px);
+}
+.nav-link.active{
+    color: var(--primary);
+    font-weight: bold;
+}
+.hero{
+    height: 90vh;
+    background-image: url(https://images.unsplash.com/photo-1664575197229-3bbebc281874?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGZyZWVsYW5jZXJ8ZW58MHx8MHx8fDA%3D);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    object-fit: cover;
+    align-items: center;
+    color: white;
+}
+.hero::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+.hero .container{
+    position: relative;
+    z-index: 2;
+}
+.card{
+    border: none;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    transition: 0.3s;
+    padding: 40px;
+}
+.team-section h6{
+    color: #ffffff;
+}
+.team-section i {
+    color: #00d4ff;
+    font-size: 18px;
+}
+.team-card{
+        background: #f8fafc;
+        border-radius: 15px;
+        text-align: center;
+        padding: 25px;
+        
+}
+.team-img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.5);  
+
+}
+.history-img-wrapper{
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.history-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.about-history{
+    height: 100%;
+    width: 100%;
+    padding: 100px 0;
+    background: #9ea0a2;
+}
+.about-history img{
+    width: 100%;
+    max-width: 550px;
+    border-radius: 20px;
+    box-shadow: 0 18px 48px rgba(0, 0, 0, 0.2);
+}
+.about-history h2{
+    margin-bottom: 18px;
+}
+.about-history p{
+    font-size: 16px;
+    line-height: 1.5;
+}
+.team-img:hover{
+    transform: scale(1.07);
+}
+.card:hover{
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 18px 48px rgba(0, 0, 0, 0.14);
+}
+.btn-primary{
+    background: var(--primary);
+    border: none;
+    text-decoration: none;
+}
+.section-title{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 38px;
+}
+.blog-card{
+    height: 190px;
+    object-fit: cover;
+}
+.carousel-item img{
+    height: 83vh;
+    object-fit: cover;
+    filter: brightness(55%);
+
+}
+.carousel-inner{
+    object-fit: cover;
+}
+.carousel-caption{
+    bottom: 23%;
+    text-align: center;
+}
+.carousel-caption h2{
+    font-size: 2.7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.carousel-caption p{
+    font-size: 1.1rem;
+    margin-top: 8px;
+    opacity: 0.8;
+}
+.carousel-indicators button{
+    width: 8px;
+    height: 8px;
+    border-radius: 45%;
+}
+.btn{
+    transition: 0.3s;
+}
+.btn:hover{
+    transform: translateY(-3px);
+}
+.service-card{
+    width: 300px;
+    height: 85px;
+}
+
+footer{
+  color: #ffffff;
+  font-size: 14px;
+  padding: 45px;
+  justify-content: end;
+
+ 
+}
+footer h5 h6{
+    color: #ffffff;
+    margin-bottom: 14px;
+    letter-spacing: 0.4px; 
+}
+footer p{
+    color: #cccccc;
+    line-height: 1.5;
+}
+footer a{
+    color: #bbbbbb;
+    transition: all0.3s ease;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+footer a:hover{
+    color: #00d4ff;
+    transform: translateX(4px);
+}
+
+footer i{
+    
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+.footer i{
+    color: #00d4ff;
+    transform: scale(1.1);
+
+}
+.footer hr{
+    opacity: 0.2;
+
+}
+
+@media (max-width:(768px)) {
+    .carousel-item img{
+        height: 58px;
+    }
+    .carousel-caption h2{
+        font-size: 1.5rem;
+    }
+    .carousel-caption p{
+        font-size: 1rem;
+    }
+
+}
+footer small{
+    color: #aaaaaa;
+}
+@media (max-width: 768px) {
+    .footer{
+        text-align: center;
+    }
+    .footer .row > div {
+        margin-bottom: 18px;
+    }
+}

@@ -3,60 +3,236 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <title>Les tarifs</title>
+    <link rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=poppins:whgt@300;400;600;800&display=swap">
+
+
 </head>
 <body>
-    <header>
-     <nav id="navbar" class="navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-
-            <a href="index.html" class="navbar-barre">AfriTalent</a>
-
-            <button class="navbar-basculeur" type="button">
-                <span class="navbar-basculeur-automatique">
-                    
-                </span>
-                  
-           </button>
     
-        <div>
-            <ul class="navbar-nav">
-                <li class="nav-element"> <a class="nav-lien active" href="index.html">Acceuil</a></li>
-                <li class="nav-element"> <a class="nav-lien" href="freelances.html">freelances</a></li>
-                <li class="nav-element"> <a class="nav-lien" href="tarifs.html">tarifs</a></li>
-                <li class="nav-element"><a class="nav-lien" href="about.html">A propos</a></li>
-                <li class="nav-element"><a class="nav-lien" href="contact.html">contact</a></li>
-            </ul>
+     <header>
+ <nav  class="navbar navbar-expand-lg navbar-light bg-transparent shadow-sm fixed-top"> 
+<div class="container"> 
+<a class="navbar-brand fw-bold text-primary" href="index.html">AfriTalent</a>
+<button class="navbar-toggler" type="button" 
+data-bs-toggle="collapse" 
+data-bs-target="#navMenu" 
+aria-controls="navMenu" 
+aria-expanded="false" 
+aria-label="Toggle navigation"> 
+<span class="navbar-toggler-icon"></span> 
+</button> 
+<div class="collapse navbar-collapse" id="navMenu"> 
+<ul class="navbar-nav ms-auto"> 
+<li class="nav-item"><a class="nav-link active" 
+href="index.html">Accueil</a></li> 
+<li class="nav-item"><a class="nav-link" 
+href="freelances.html">Freelances</a></li> 
+<li class="nav-item"><a class="nav-link" 
+href="tarifs.html">Tarifs</a></li> 
+<li class="nav-item"><a class="nav-link" href="about.html">A 
+propos</a></li> 
+<li class="nav-item"><a class="nav-link" 
+href="blog.html">Blog</a></li> 
+<li class="nav-item"><a class="nav-link" 
+href="contact.html">Contact</a></li> 
+</ul> 
+</div>   
+</div> 
+</nav> 
+     </header>
+<!-- Contenu principal -->
+<section class="pricing-hero text-center text-white d-flex align-items-center">
+    <div class="container">
+        <h1 class="fw-bold">Des plans adaptés à tous</h1>
+        <p class="lead">Choisissez l'offre qui correspond à vos besoins</p>
+    </div>
+</section>
+
+<section class="container my-5">
+
+        <div class="text-center mb-4">
+           <h2 class="fw-bold">Nos offres</h2>
+                <p class="text-muted">Des prix simple, transparent et adaptés à tous les freelances</p>
+                 </div>
+
+
+                 <div class="row g-4">
+
+                    <div class="col-md-4">
+                        <div class="card pricing-card h-100 text-center p-4">
+                            <h5 class="text-muted">Gratuit</h5>
+                            <h2 class="price">0 FCFA<span>/mois</span></h2>
+
+                             <ul class="list-unstyled mt-4">
+                    <li><i class="bi bi-check text-succes"></i>Accés limité</li>
+                    <li><i class="bi bi-check text-succes"></i>Profil basique</li>
+                    <li><i class="bi bi-check text-danger"></i>Support prioritaire</li>
+                    <li><i class="bi bi-check text-danger"></i>Visibilité premium</li>
+                </ul>
+                
+                <button class="btn btn-dark mt-3">Commencer</button>
+
+                        </div>  
+                    </div>
+             
+          <div class="col-md-4">
+                        <div class="card pricing-card popular h-100 text-center p-4 position-relative">
+                          <span class="badge badge-primary popular-badge">Populaire</span>
+                          <h5 class="text-muted">Pro</h5>
+                          <h2 class="price"><span>12000 FCFA</span></h2>
+
+                             <ul class="list-unstyled mt-4">
+                    <li><i class="bi bi-check text-succes"></i>Accés illimité</li>
+                    <li><i class="bi bi-check text-succes"></i>Profil optimisé</li>
+                    <li><i class="bi bi-check text-sucess"></i>Mise en avant du profil</li>
+                    <li><i class="bi bi-check text-succes"></i>Support prioritaire</li>
+                </ul>
+
+                <button class="btn btn-dark mt-3">Choisir pro</button>
             </div>
         </div>
-    </nav>   
-   </header>
-   
-   <main>
-    <h1>Les tarifs</h1>
-    <section>
-        <h3>Gratuit</h3>
-        <p>
-            Accés non complet
-        </p>
-    </section>
-    <section>
-        <h3>Accés complet</h3>
-    </section>
-    <section>
-        <h3>entreprises</h3>
-        <p>
-            Premium
-        </p>
-    </section>
-   </main>
-   
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    </script>
-    <script src="js/main.js">
-    </script>
+
+    <div class="col-md-4">
+                        <div class="card pricing-card h-100 text-center p-4 ">
+                            <h5 class="text-muted">Entreprise</h5>
+                          <h2 class="price"><span>18000 FCFA</span></h2>
+
+                             <ul class="list-unstyled mt-4">
+                    <li><i class="bi bi-check text-succes"></i>Gestion equipe</li>
+                    <li><i class="bi bi-check text-succes"></i>Profil premium</li>
+                    <li><i class="bi bi-check text-sucess"></i>Visibilté maximale</li>
+                    <li><i class="bi bi-check text-succes"></i>Support dédié 24/7</li>
+                </ul>
+
+                <button class="btn btn-dark mt-3">Contactez-nous</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container my-5">
+    <h2 class="text-center fw-bold mb-4">FAQ</h2>
+    <div class="accordion" id="faq">
+        <div>
+            <h2 class="accordion-item"><button class="accordion-header">Comment fonctionnent AfriTalent ?</button></h2>
+            <div  id="q1" class="accordion-collapse collapse show" data-bs-parent="faq">
+                <div class="accordion-body">
+                    AfriTalent met en relation freelance et clients à travers une plateforme simple
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h2><button>Puis-je changer de plan ?</button></h2>
+            <div>
+                <div>
+                    Oui, vous pouvez changer votre plan à tous moment.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse"
+                data-bs-target="#q2"
+                >Y a t'il des frais cachés </button></h2>
+
+            <div id="q2" class="accordion-collapse collapse" data-bs-parent="#faq">
+                <div class="accordion-body">
+                    Non, tous les tarifs sont transparent
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header"><button class="accordion-button collapsed"
+                data-bs-toggle="collapse"
+                data-bs-target="#q4"
+                >Comment contacter le Support ?</button></h2>
+
+            <div id="q4" class="accordion-collapse collapse" data-bs-parent="#faq">
+                <div class="accordion-body">
+                    Le Support est accéssible via votre utilisateur.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header"><button class="accordion-button collapsed"
+                data-bs-toggle="collapse"
+                data-bs-target="#q5"
+                >Le plan gratuit est-il limité ?</button></h2>
+
+            <div id="q5" class="accordion-collapse collapse"
+            data-bs-parent="#faq">
+                <div class="accordion-body">
+                    Oui, certaines fonctionnalités sont réservés aux plans payants.
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer class="bg-transparent text-light py-4"> 
+   <div class="container">
+    <div class="row d-flex align-items-center text-center">
+
+        <div class="col-md-4 mb-4">
+            <h5 class="text-uppercase fw-bold">Afritalent</h5>
+            <p>La plateforme qui connecte les talents africains aux 
+                opportunités freelances dans le monde entier
+            </p>
+        </div>
+
+        <div class="col-md-2 mb-4">
+            <h5 class="fw-bold">Liens</h5>
+            <ul class="list-unstyled">
+               <li><a href="index.html" class="text-light text-decoration-none">Acceuil</a></li>
+               <li><a href="about.html" class="text-light text-decoration-none"></a>A propos</li>
+               <li><a href="freelances.html" class="text-light text-decoration-none"></a>Freelance</li>
+               <li><a href="tarifs.html" class="text-light text-decoration-none"></a>Tarifs</li>
+               <li><a href="blog.html" class="text-light text-decoration-none"></a>Blog</li>
+               <li><a href="contact.html" class="text-light text-decoration-none"></a>Contact</li>
+            </ul>
+        </div>
+
+
+       <div class="col-md-3 mb-4">
+        <h6 class="fw-bold">Support</h6>
+        <ul class="list-unstyled">
+            <li><a href="" class="text-light text-decoration-none">Aide</a></li>
+            <li><a href="" class="text-light text-decoration-none">Contact</a></li>
+            <li><a href="" class="text-light text-decoration-none">Condition</a></li>
+        </ul>
+       </div>
+
+       <div class="d-flex justify-content-center align-items-center gap-3">
+        <h6>Suivez-nous</h6>
+        <a href="" class="text-light me-3"><i class="bi bi-facebook fs-2"></i></a>
+         <a href="" class="text-light me-3"><i class="bi bi-twitter fs-2"></i></a>
+          <a href="" class="text-light me-3"><i class="bi bi-instagram fs-2"></i></a>
+           <a href="" class="text-light me-3"><i class="bi bi-linkedin fs-2"></i></a>
+       </div>
+      </div>
+
+      <hr class="border-light">
+      
+      <div>
+        <small>&copy; 2025 Afrique. Tous droits reserves.</small>
+      </div>
+    </div>
+</footer> 
+
+
+<script 
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+></script> 
+<script src="js/main.js"></script>
     
 </body>
 </html>
