@@ -3,87 +3,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <title>Les freelances </title>
+    <link rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" 
+    href="css/style.css" type="text/css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=poppins:whgt@300;400;600;800&display=swap">
+      <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.CSS">
 </head>
 <body>
-     <header>
-     <nav id="navbar" class="navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-
-            <a href="index.html" class="navbar-barre">AfriTalent</a>
-
-            <button class="navbar-basculeur" type="button">
-                <span class="navbar-basculeur-automatique">
-                    
-                </span>
-                  
-           </button>
     
-        <div>
-            <ul class="navbar-nav">
-                <li class="nav-element"> <a class="nav-lien active" href="index.html">Acceuil</a></li>
-                <li class="nav-element"> <a class="nav-lien" href="freelances.html">freelances</a></li>
-                <li class="nav-element"> <a class="nav-lien" href="tarifs.html">tarifs</a></li>
-                <li class="nav-element"><a class="nav-lien" href="about.html">A propos</a></li>
-                <li class="nav-element"><a class="nav-lien" href="contact.html">contact</a></li>
-            </ul>
-            </div>
+    <header> 
+  <nav class="navbar navbar-expand-lg navbar-light bg-transparent shadow-sm fixed-top"> 
+<div class="container"> 
+<a class="navbar-brand fw-bold text-primary" href="index.html">AfriTalent</a> 
+<button class="navbar-toggler" type="button" 
+data-bs-toggle="collapse" 
+data-bs-target="#navMenu" 
+aria-controls="navMenu" 
+aria-expanded="false" 
+aria-label="Toggle navigation"> 
+<span class="navbar-toggler-icon"></span> 
+</button> 
+<div class="collapse navbar-collapse" id="navMenu"> 
+<ul class="navbar-nav ms-auto"> 
+<li class="nav-item"><a class="nav-link active" 
+href="index.html">Accueil</a></li> 
+<li class="nav-item"><a class="nav-link" 
+href="freelances.html">Freelances</a></li> 
+<li class="nav-item"><a class="nav-link" 
+href="tarifs.html">Tarifs</a></li> 
+<li class="nav-item"><a class="nav-link" href="about.html">A 
+propos</a></li> 
+<li class="nav-item"><a class="nav-link" 
+href="blog.html">Blog</a></li> 
+<li class="nav-item"><a class="nav-link" 
+href="contact.html">Contact</a></li> 
+</ul> 
+</div> 
+</div> 
+</nav>  
+    </header>
+
+<section class="header">
+<h1>Nos freelances</h1>
+<p>Trouvez le plan parfait pour votre projet</p>
+</section>
+
+<section class="contacter my-5">
+  <div class="row">
+
+      <div class="col-md-4">
+      <input type="text" class="form-control" placeholder="Rechercher...">
+    </div>
+  
+  <div class="col-md-4">
+    <select class="form-select">
+      <option value="">Catrégories</option>
+      <option value="">Developpement</option>
+      <option value="">Design</option>
+      <option value="">Marketing</option>
+    </select>
+  </div>
+
+  <div class="col-md-4">
+    <select class="form-select">
+      <option value="">Niveau</option>
+      <option value="">Junior</option>
+      <option value="">Senior</option>
+    </select>
+  </div>
+
+  </div>
+</section>
+
+<section class="container mb-5">
+  <div class="row">
+
+    <div class="col-md-4 mb-4">
+      <div class="card freelance-card p-3 text-center">
+        <span class="badge badge-top">Top freelance</span>
+        <h5>Aminata Gueye</h5>
+        <p>Développeuse web</p>
+        <div class="text-warning">
+
         </div>
-    </nav>   
-   </header>
-   <main>
-    <h1>freelances</h1>
-    <section>
-        <h3>Babacar sy</h3>
-        <p>
-            developpeur web
-        </p>
-        <p>
-            12000 FCFA/h
-        </p>
-        <h3>Moussa Fall</h3>
-        <p>
-            Design UI/UX
-        </p>
-        <p>
-            15000 FCFA/h
-        </p>
-        <h3>Seyni Diallo</h3>
-        <p>
-            Marketing digital
-        </p>
-        <p>
-            12500FCFA/h
-        </p>
-        <h3>Data & IA</h3>
-        <P>
-            Awa sy
-        </P>
-        <p>
-            Rédaction Tech
-        </p>
-        <p>
-            7000FCFA/h
-        </p>
-        <h3>
-            Djiby Sall
-        </h3>
-        <p>
-           Devops & Cloud 
-        </p>
-        <p>
-            9000FCFA/h
-        </p>
-    </section>
+        <p class="text-muted">8 ans d'expérience</p>
 
-   </main>
+        <button class="btn btn-primary">Voir profil</button>
+      </div>
+    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">                
-            </script>
-            <script src="js/main.js">  
-            </script>
-    
+    <div class="col-md-4 mb-4">
+      <div class="card freelance-card p-3 text-center">
+        <span class="badge badge-top">Top freelance</span>
+        <h5>Issa Niang</h5>
+        <p>UI/UX Designer</p>
+        <div class="text-warning">
+
+        </div>
+        <p class="text-muted">7 ans d'expérience</p>
+        
+        <button class="btn btn-primary">Voir profil</button>
+
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+      <div class="card freelance-card p-3">
+        <span class="badge badge-top">Top freelance</span>
+        <h5>Albert Sagna</h5>
+        <p>Marketing digital</p>
+
+        <div class="text-warning">
+
+        </div>
+        <p class="text-muted">5ans d'expérience</p>
+
+        <button class="btn btn-primary">Voir profil</button>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+  
+<footer class="bg-transparent text-light py-4"> 
+   <div class="container">
+    <div class="row d-flex align-items-center text-center">
+
+        <div class="col-md-4 mb-4">
+            <h5 class="text-uppercase fw-bold">Afritalent</h5>
+            <p>La plateforme qui connecte les talents africains aux 
+                opportunités freelances dans le monde entier
+            </p>
+        </div>
+
+        <div class="col-md-2 mb-4">
+            <h5 class="fw-bold">Liens</h5>
+            <ul class="list-unstyled">
+               <li><a href="index.html" class="text-light text-decoration-none">Acceuil</a></li>
+               <li><a href="about.html" class="text-light text-decoration-none"></a>A propos</li>
+               <li><a href="freelances.html" class="text-light text-decoration-none"></a>Freelance</li>
+               <li><a href="tarifs.html" class="text-light text-decoration-none"></a>Tarifs</li>
+               <li><a href="blog.html" class="text-light text-decoration-none"></a>Blog</li>
+               <li><a href="contact.html" class="text-light text-decoration-none"></a>Contact</li>
+            </ul>
+        </div>
+
+
+       <div class="col-md-3 mb-4">
+        <h6 class="fw-bold">Support</h6>
+        <ul class="list-unstyled">
+            <li><a href="" class="text-light text-decoration-none">Aide</a></li>
+            <li><a href="" class="text-light text-decoration-none">Contact</a></li>
+            <li><a href="" class="text-light text-decoration-none">Condition</a></li>
+        </ul>
+       </div>
+
+       <div class="d-flex justify-content-center align-items-center gap-3">
+        <h6>Suivez-nous</h6>
+        <a href="" class="text-light me-3"><i class="bi bi-facebook fs-2"></i></a>
+         <a href="" class="text-light me-3"><i class="bi bi-twitter fs-2"></i></a>
+          <a href="" class="text-light me-3"><i class="bi bi-instagram fs-2"></i></a>
+           <a href="" class="text-light me-3"><i class="bi bi-linkedin fs-2"></i></a>
+       </div>
+      </div>
+
+      <hr class="border-light">
+      
+      <div>
+        <small>&copy; 2025 Afrique. Tous droits reserves.</small>
+      </div>
+    </div>
+</footer> 
+
+
+
+<script 
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+></script> 
+<script src="js/main.js"></script>
+
+
 </body>
 </html>
