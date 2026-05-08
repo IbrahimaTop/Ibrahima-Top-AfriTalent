@@ -13,9 +13,16 @@
 <body>
 
 <header>
-     <nav   class="navbar navbar-expand-lg navbar-light bg-transparent shadow-sm fixed-top"> 
+     <nav   class="navbar navbar-expand-lg navbar-light shadow-sm fixed-top"> 
          <div class="container">    
-            <a class="navbar-brand fw-bold text-primary" href="index.html">AfriTalent</a> 
+          <a href="index.html" class="navbar-brand logo">
+            <div class="logo-icon">
+                <i class="bi bi-stars"></i>
+            </div>
+            <span class="logo-text">
+                Afri<span>Talent</span>
+            </span>
+          </a>
                <button class="navbar-toggler" type="button" 
                   data-bs-toggle="collapse"
                   data-bs-target="#navMenu"
@@ -25,7 +32,7 @@
                   <span class="navbar-toggler-icon"></span>
               </button>  
             <div class="collapse navbar-collapse" id="navMenu"> 
-                <ul class="navbar-nav ms-auto"> 
+                <ul class="navbar-nav ms-auto fw-bold"> 
                     <li class="nav-item"><a class="nav-link active" 
                     href="index.html">Accueil</a></li> 
                     <li class="nav-item"><a class="nav-link" 
@@ -71,33 +78,32 @@
 </section>
 
 <section class="container py-5">
-    <h2 class="text-center mb-4">Comment ça marche ?</h2>
-    <div class="bento">
-        <div class="card p-3 m-3">
-            <h5>1.Créer un compte</h5>
+    <h2 class="text-center mb-4 fw-bold">Comment ça marche ?</h2>
+    <div class="bento-grid">
+        <div class="card bento-card large-card p-4">
+            <h5>1<i class="bi bi-forward"></i>Créer un compte</h5>
             <p>Inscrivez vous gratuitement sur la plateforme.</p>
         </div>
-        <div class="card  p-3 m-3">
-            <h5>2.Trouvez un projet</h5>
+        <div class="card bento-card p-4">
+            <h5>3<i class="bi bi-forward"></i>Trouvez un projet</h5>
             <p>Explorez les missions disponibles.</p>
         </div>
-        <div class="card  p-3 m-3">
-            <h5>3.Collaborer</h5>
+        <div class="card bento-card tall-card p-4">
+            <h5>3<i class="bi bi-forward"></i>Collaborer</h5>
             <p>Travaille avec les meilleurs talents</p>
         </div>
-        <div class="card  p-3 m-3">
-            <h5>4.Etre payé</h5>
+        <div class="card bento-card p-4">
+            <h5>4<i class="bi bi-forward"></i>Etre payé</h5>
             <p>Recevez vos paiements en toute sécurité.</p>
         </div>
     </div>
 </section>
 
 <section class="container my-5">
-    <h2 class="text-center mb-4">Catrégories</h2>
+    <h2 class="text-center mb-4 fw-bold">Catégories</h2>
     <div class="row">
         <div class="col-md-4 mb-4">
             <div class="card service-card p-3 text-center">
-                <i></i>
                 <h5>Developpement web</h5>
                 <p>500 freelances</p>
             </div>
@@ -105,7 +111,6 @@
 
         <div class="col-md-4 mb-4">
             <div class="card service-card   p-3 text-center">
-                <i></i>
                 <h5>UI/UX</h5>
                 <p>300 freelances</p>
             </div>
@@ -113,7 +118,7 @@
 
         <div class="col-md-4 mb-4">
             <div class="card service-card p-3 text-center">
-                <i></i>
+             
                 <h5>Marketing</h5>
                 <p>400 freelances</p>
             </div>
@@ -121,7 +126,6 @@
 
         <div class="col-md-4 mb-4">
             <div class="card service-card p-3 text-center">
-                <i></i>
                 <h5>Data & IA</h5>
                 <p>300 freelances</p>
             </div>
@@ -129,7 +133,6 @@
         
         <div class="col-md-4 mb-4">
             <div class="card service-card p-3 text-center">
-                <i></i>
                 <h5>Redaction</h5>
                 <p>80 freelances</p>
             </div>
@@ -137,7 +140,7 @@
 
         <div class="col-md-4 mb-4">
             <div class="card service-card p-3 text-center">
-                <h5>DevOps</h5>
+                <h5>DevOps & Cloud</h5>
                 <p>100 freelances</p>
             </div>
         </div>
@@ -155,7 +158,7 @@
     <div class="carousel-inner">
 
         <div class="carousel-item active">
-            <img src="https://images.unsplash.com/photo-1613089566490-ec5b9a7d4a60?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d2VsY29tZSUyMGZyZWVsYW5jZXxlbnwwfHwwfHx8MA%3D%3D" class="d-block w-100" alt="slide1">
+            <img src="https://images.unsplash.com/photo-1565882694798-4c9d004e65b7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fGZyZWVsYW5jZSUyMHRlYW18ZW58MHx8MHx8fDA%3D" class="d-block w-100" alt="slide1">
             <div class="carousel-caption">
                 <h2>Bienvenue sur AfriTalent.</h2>
                 <p>Connectez les talents africains au monde.</p>
@@ -164,7 +167,7 @@
 
          <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="https://images.unsplash.com/photo-1613909207039-6b173b755cc1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZnJlZWxhbmNlcnxlbnwwfHwwfHx8MA%3D%3D" class="d-block w-100" alt="slide2">
+            <img src="https://images.unsplash.com/photo-1745474633597-be94033b16d6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODV8fGZyZWVsYW5jaW5nfGVufDB8fDB8fHww" class="d-block w-100" alt="slide2">
             <div class="carousel-caption">
                 <h2>Trouvez les meilleurs freelances</h2>
                 <p>Développeurs, Marketeurs, Désigners</p>
@@ -173,7 +176,7 @@
 
          <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="https://images.unsplash.com/photo-1751448555253-f39c06e29d82?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZnJlZWxhbmNlJTIwc2VjdXJpdHl8ZW58MHx8MHx8fDA%3D" class="d-block w-100" alt="slide3">
+            <img src="https://images.unsplash.com/photo-1533709752211-118fcaf03312?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGN5YmVyJTIwc2VjdXJpdHl8ZW58MHx8MHx8fDA%3D" class="d-block w-100" alt="slide3">
             <div class="carousel-caption">
                 <h2>Travail sécurisé</h2>
                 <p>Une plateforme fiable et moderne</p>
@@ -193,14 +196,14 @@
 
 
 <section class=" container my-5 text-center">
-    <h2>Rejoignez afritalent</h2>
+    <h2 class="fw-bold">Rejoignez afritalent</h2>
     <a href="" class="btn btn-light mt-3">S'inscrire</a>
 </section>
 
 <!-- Pied de page --> 
-<footer class="bg-transparent text-light py-4"> 
+<footer class="bg-dark text-light pt-3 pb-3 mt-5"> 
    <div class="container">
-    <div class="row d-flex align-items-center text-center">
+    <div class="row">
 
         <div class="col-md-4 mb-4">
             <h5 class="text-uppercase fw-bold">Afritalent</h5>
@@ -210,20 +213,20 @@
         </div>
 
         <div class="col-md-2 mb-4">
-            <h5 class="fw-bold">Liens</h5>
+            <h5 class="fw-bold">Liens :</h5>
             <ul class="list-unstyled">
                <li><a href="index.html" class="text-light text-decoration-none">Acceuil</a></li>
-               <li><a href="about.html" class="text-light text-decoration-none"></a>A propos</li>
-               <li><a href="freelances.html" class="text-light text-decoration-none"></a>Freelance</li>
-               <li><a href="tarifs.html" class="text-light text-decoration-none"></a>Tarifs</li>
-               <li><a href="blog.html" class="text-light text-decoration-none"></a>Blog</li>
-               <li><a href="contact.html" class="text-light text-decoration-none"></a>Contact</li>
+               <li><a href="about.html" class="text-light text-decoration-none">A propos</a></li>
+               <li><a href="freelances.html" class="text-light text-decoration-none">Freelance</a></li>
+               <li><a href="tarifs.html" class="text-light text-decoration-none">Tarifs</a></li>
+               <li><a href="blog.html" class="text-light text-decoration-none">Blog</a></li>
+               <li><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
             </ul>
         </div>
 
 
        <div class="col-md-3 mb-4">
-        <h6 class="fw-bold">Support</h6>
+        <h6 class="fw-bold">Support :</h6>
         <ul class="list-unstyled">
             <li><a href="" class="text-light text-decoration-none">Aide</a></li>
             <li><a href="" class="text-light text-decoration-none">Contact</a></li>
@@ -231,8 +234,8 @@
         </ul>
        </div>
 
-       <div class="d-flex justify-content-center align-items-center gap-3">
-        <h6>Suivez-nous</h6>
+       <div class="col-md-3">
+        <h6 class="fw-bold">Suivez-nous :</h6>
         <a href="" class="text-light me-3"><i class="bi bi-facebook fs-2"></i></a>
          <a href="" class="text-light me-3"><i class="bi bi-twitter fs-2"></i></a>
           <a href="" class="text-light me-3"><i class="bi bi-instagram fs-2"></i></a>
@@ -242,12 +245,11 @@
 
       <hr class="border-light">
       
-      <div>
+      <div class="text-center">
         <small>&copy; 2025 Afrique. Tous droits reserves.</small>
       </div>
     </div>
 </footer> 
-
 
 
         
