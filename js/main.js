@@ -37,3 +37,45 @@ document.addEventListener('DOMContentLoaded',() => {
         window.scrollTo({ top: 0, behavior: 'smooth'});
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const options = {
+        threshold: 0.3
+    };
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    if (entry.target.classList.contains('stat-number')) {
+
+                        const counter = entry.target;
+                        const target = parseInt(counter.dataset.target);
+
+                        let count = 0;
+                        const increment = Math.ceil(target / 50);
+
+                        counter.textContent = '0+'
+                        const updateCount = () => {
+
+                            count += increment;
+
+                              if (count >= target) {
+                                counter.textContent = target + '+';
+                                return;
+                        }
+                        counter.textContent = count +'+';
+                        setTimeout(updateCount, 30); 
+                            
+                        };
+
+                        updateCount();
+                    }
+                    if (entry.target.classList.contains('fade-in')) {
+                        entry.target.classList.add('visible');
+                    }
+                    observer.unobserve(entry.target);
+                }
+            });
+    }, options);
+    document.querySelectorAll('.stat-number, .fade-in')
+    .forEach(el => observer.observe(el));
+})
