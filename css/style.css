@@ -207,7 +207,7 @@ h1{
 .stat-number{
     font-size: 2.1rem;
     font-weight: 790;
-    color: var(--color-primary);
+    color: var(--color-text-muted);
     margin-bottom: 4px;
     letter-spacing: -0.4px;
 }
@@ -219,9 +219,7 @@ h1{
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-.text-info{
-    color: var(--color-primary);
-}
+
 .freelance-count{
     color: var(--color-text-white);
 }
@@ -841,6 +839,15 @@ h1{
 }
 .back-to-top:hover{
     background-color: var(--color-primary-hover);
+}
+.fade-in {
+    opacity: 1;
+    transform: none;
+    
+}
+.fade-in.visible {
+    opacity: 1;
+   
 }
 
 @media (max-width: 992px){
