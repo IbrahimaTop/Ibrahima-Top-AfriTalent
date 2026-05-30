@@ -57,36 +57,39 @@
   <h1 class="freelance-hero mb-4 text-white text-center">Nos freelances</h1>
   <div class="row g-3 search-filter-bar mb-5">
     <div class="col-12 col-md-4">
-      <input type="text" class="form-control" placeholder="Rechercher une compétence (ex: React, Python)...">
+      <input type="text" class="form-control search-filter-bar" id="searchInput" placeholder="Rechercher une compétence (ex: React, Python)...">
     </div>
-    <div class="col-12 col-md-4 col-sm-6">
-      <select class="form-select">
-        <option value="">Catégories</option>
-        <option>Developpement</option>
-        <option>Désign</option>
+    <div class="filter-container col-12 col-md-4 col-sm-6">
+      <select class="form-select" id="categoryFilter">
+        <option value="categories">Catégories</option>
+        <option value="developpement">Developpement</option>
+        <option value="design">Désign</option>
+         <option value="analyste">Analyste</option>
+          <option value="marketing">Marketing</option>
+           <option value="chef">Chef de projet</option>
       </select>
     </div>
-    <div class="col-12 col-md-4 col-sm-6">
-      <select class="form-select">
-        <option value="">Niveau</option>
-      <option>Junior</option>
-      <option>Sénior</option>
+    <div class="filter-container col-12 col-md-4 col-sm-6">
+      <select class="form-select" id="levelFilter">
+        <option value="all">Niveau</option>
+      <option value="junior">Junior</option>
+      <option value="senior">Sénior</option>
       </select>
     </div>
   </div>
 
-  <div class="row g-4 mb-5">
+  <div class="row g-4 mb-5" id="freelance-list">
 
-    <div class="col-12 col-md-6 col-lg-4 mb-4">
-      <div class="water-card  freelance-card p-4">
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="water-card  freelance-card p-4 h-100"  data-category="developpement" data-level="senior">
         <span class="freelance-badge text-center">Top-freelance</span>
          <div class="freelance-avatar-container my-3">
           <img src="https://images.unsplash.com/photo-1756806885486-e289ac412b9c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjQ4fHxwcm9maWx8ZW58MHx8MHx8fDA%3D" class="freelance-avatar" alt="Aminata Gueye">
          </div>
         <h5 class="freelance-name">Aminata Gueye</h5>
-        <p class="freelance-title">Développeuse web</p>
+        <p class="freelance-title">Developpement web</p>
         <span class="freelance-exp">8 ans d'expérience</span>
-        <p class="freelance-desc">Spécialiste en JS React avec 8ans d'expérience dans la création d'application Fintech sécurisées </p>
+        <p class="freelance-desc">Spécialiste en JS React avec 8ans d'expérience dans la création d'application Fintech sécurisées. </p>
        <div class="freelance-stars mb-3">
          <i class="bi bi-star-fill fs-4"></i>
            <i class="bi bi-star-fill fs-4"></i>
@@ -99,16 +102,16 @@
     </div>
 
 
-     <div class="col-12 col-md-6 col-lg-4 mb-4">
-      <div class="water-card freelance-card p-4">
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="water-card freelance-card p-4 h-100" data-category="design" data-level="senior">
          <span class="freelance-badge text-center">Top-freelance</span>
          <div class="freelance-avatar-container my-3">
-          <img src="https://images.unsplash.com/photo-1756806885486-e289ac412b9c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjQ4fHxwcm9maWx8ZW58MHx8MHx8fDA%3D" class="freelance-avatar" alt="Aminata Gueye">
+          <img src="https://images.unsplash.com/photo-1756806885486-e289ac412b9c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjQ4fHxwcm9maWx8ZW58MHx8MHx8fDA%3D" class="freelance-avatar" alt="Issa Niang">
          </div>
         <h5 class="freelance-name">Issa Niang</h5>
         <p class="freelance-title">UI/UX Design</p>
         <span class="freelance-exp">5 ans d'expérience</span>
-        <p class="freelance-desc">Spécialiste en JS React avec 8ans d'expérience dans la création d'application Fintech sécurisées </p>
+        <p class="freelance-desc">Designer UI/UX avec 5ans d'experience dans la création d'interfaces intuitives et modernes.</p>
        <div class="freelance-stars mb-3">
          <i class="bi bi-star-fill fs-4"></i>
            <i class="bi bi-star-fill fs-4"></i>
@@ -120,16 +123,16 @@
       </div>
     </div>
 
-    <div class="col-12 col-md-6 col-lg-4 mb-4">
-      <div class="water-card freelance-card p-4">
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="water-card freelance-card p-4 h-100"  data-category="analyste" data-level="senior">
          <span class="freelance-badge text-center">Top-freelance</span>
          <div class="freelance-avatar-container my-3">
-          <img src="https://images.unsplash.com/photo-1756806885486-e289ac412b9c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjQ4fHxwcm9maWx8ZW58MHx8MHx8fDA%3D" class="freelance-avatar" alt="Aminata Gueye">
+          <img src="https://images.unsplash.com/photo-1756806885486-e289ac412b9c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjQ4fHxwcm9maWx8ZW58MHx8MHx8fDA%3D" class="freelance-avatar" alt="Julianne Séne">
          </div>
         <h5 class="freelance-name">Julianne Séne</h5>
         <p class="freelance-title">Data & analyste</p>
         <span class="freelance-exp">6 ans d'expérience</span>
-        <p class="freelance-desc">Spécialiste en JS React avec 8ans d'expérience dans la création d'application Fintech sécurisées </p>
+        <p class="freelance-desc">Analyste de données avec 6 ans d'experience dans l'exploitation et la visualisation de données stratégique. </p>
        <div class="freelance-stars mb-3">
          <i class="bi bi-star-fill fs-4"></i>
            <i class="bi bi-star-fill fs-4"></i>
@@ -141,16 +144,16 @@
       </div>
     </div>
 
-     <div class="col-12 col-md-6 col-lg-4 mb-4">
-      <div class="water-card freelance-card p-4">
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="water-card freelance-card p-4 h-100"  data-category="developpement" data-level="junior">
         <span class="freelance-badge text-center">Top-freelance</span>
          <div class="freelance-avatar-container my-3">
-          <img src="https://images.unsplash.com/photo-1756806885486-e289ac412b9c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjQ4fHxwcm9maWx8ZW58MHx8MHx8fDA%3D" class="freelance-avatar" alt="Aminata Gueye">
+          <img src="https://images.unsplash.com/photo-1756806885486-e289ac412b9c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjQ4fHxwcm9maWx8ZW58MHx8MHx8fDA%3D" class="freelance-avatar" alt="Mouhamed Fall">
          </div>
         <h5 class="freelance-name">Mouhamed Fall</h5>
-        <p class="freelance-title">Dev-front-end</p>
+        <p class="freelance-title">Developpement front-end</p>
         <span class="freelance-exp">7 ans d'expérience</span>
-        <p class="freelance-desc">Spécialiste en JS React avec 8ans d'expérience dans la création d'application Fintech sécurisées </p>
+        <p class="freelance-desc">Developpement Front-End avec 7 ans d'expérience dans la conception d'interface web réactives et performantes </p>
        <div class="freelance-stars mb-3">
         <i class="bi bi-star-fill fs-4"></i>
            <i class="bi bi-star-fill fs-4"></i>
@@ -163,16 +166,16 @@
     </div>
 
 
-   <div class="col-12 col-md-6 col-lg-4 mb-4">
-      <div class="water-card freelance-card p-4">
+   <div class="col-12 col-md-6 col-lg-4">
+      <div class="water-card freelance-card p-4 h-100" data-category="dev" data-level="senior">
          <span class="freelance-badge text-center">Top-freelance</span>
          <div class="freelance-avatar-container my-3">
-          <img src="https://images.unsplash.com/photo-1756806885486-e289ac412b9c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjQ4fHxwcm9maWx8ZW58MHx8MHx8fDA%3D" class="freelance-avatar" alt="Aminata Gueye">
+          <img src="https://images.unsplash.com/photo-1756806885486-e289ac412b9c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjQ4fHxwcm9maWx8ZW58MHx8MHx8fDA%3D" class="freelance-avatar" alt="Lissa Sy">
          </div>
         <h5 class="freelance-name">Lissa Sy</h5>
-        <p class="freelance-title">Dev-back-end</p>
+        <p class="freelance-title">Developpement back-end</p>
         <span class="freelance-exp">9 ans d'expérience</span>
-        <p class="freelance-desc">Spécialiste en JS React avec 8ans d'expérience dans la création d'application Fintech sécurisées </p>
+        <p class="freelance-desc">Developpeur Back-End avec 9 ans d'expérience dans la création d'API sécurisées et intuitives.</p>
        <div class="freelance-stars mb-3">
         <i class="bi bi-star-fill fs-4"></i>
            <i class="bi bi-star-fill fs-4"></i>
@@ -184,16 +187,16 @@
       </div>
     </div>
 
-     <div class="col-12 col-md-6 col-lg-4 mb-4">
-      <div class="water-card freelance-card p-4">
+     <div class="col-12 col-md-6 col-lg-4">
+      <div class="water-card freelance-card p-4 h-100"  data-category="analyste" data-level="senior">
          <span class="freelance-badge text-center">Top-freelance</span>
          <div class="freelance-avatar-container my-3">
-          <img src="https://images.unsplash.com/photo-1756806885486-e289ac412b9c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjQ4fHxwcm9maWx8ZW58MHx8MHx8fDA%3D" class="freelance-avatar" alt="Aminata Gueye">
+          <img src="https://images.unsplash.com/photo-1756806885486-e289ac412b9c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjQ4fHxwcm9maWx8ZW58MHx8MHx8fDA%3D" class="freelance-avatar" alt="Malick Top">
          </div>
         <h5 class="freelance-name">Malick Top</h5>
-        <p class="freelance-title">Expert en analyste data</p>
+        <p class="freelance-title">Expert analyste de données</p>
         <span class="freelance-exp">12 ans d'expérience</span>
-        <p class="freelance-desc">Spécialiste en JS React avec 8ans d'expérience dans la création d'application Fintech sécurisées </p>
+        <p class="freelance-desc">Expert en analyste de données avec 12 ans d'expérience dans l'optimisation des performances métier.</p>
        <div class="freelance-stars mb-3">
         <i class="bi bi-star-fill fs-4"></i>
            <i class="bi bi-star-fill fs-4"></i>
@@ -206,16 +209,16 @@
     </div>
 
 
-     <div class="col-12 col-md-6 col-lg-4 mb-4">
-      <div class="water-card freelance-card p-4">
+     <div class="col-12 col-md-6 col-lg-4">
+      <div class="water-card freelance-card p-4 h-100"  data-category="design" data-level="junior">
          <span class="freelance-badge text-center">Top-freelance</span>
          <div class="freelance-avatar-container my-3">
-          <img src="https://images.unsplash.com/photo-1756806885486-e289ac412b9c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjQ4fHxwcm9maWx8ZW58MHx8MHx8fDA%3D" class="freelance-avatar" alt="Aminata Gueye">
+          <img src="https://images.unsplash.com/photo-1756806885486-e289ac412b9c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjQ4fHxwcm9maWx8ZW58MHx8MHx8fDA%3D" class="freelance-avatar" alt="Veronica Lambert">
          </div>
         <h5 class="freelance-name">Veronica Lambert</h5>
-        <p class="freelance-title">Expert en designer</p>
+        <p class="freelance-title">Désign graphique</p>
         <span class="freelance-exp">8 ans d'expérience</span>
-        <p class="freelance-desc">Spécialiste en JS React avec 8ans d'expérience dans la création d'application Fintech sécurisées </p>
+        <p class="freelance-desc">Désigner graphique avec 8 ans d'expérience dans la création d'identité visuelles impactantes.</p>
        <div class="freelance-stars mb-3">
         <i class="bi bi-star-fill fs-4"></i>
            <i class="bi bi-star-fill fs-4"></i>
@@ -227,16 +230,16 @@
       </div>
     </div>
 
-     <div class="col-12 col-md-6 col-lg-4 mb-4">
-      <div class="water-card freelance-card p-4">
+     <div class="col-12 col-md-6 col-lg-4">
+      <div class="water-card freelance-card p-4 h-100"  data-category="marketing" data-level="senior">
          <span class="freelance-badge text-center">Top-freelance</span>
          <div class="freelance-avatar-container my-3">
-          <img src="https://images.unsplash.com/photo-1756806885486-e289ac412b9c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjQ4fHxwcm9maWx8ZW58MHx8MHx8fDA%3D" class="freelance-avatar" alt="Aminata Gueye">
+          <img src="https://images.unsplash.com/photo-1756806885486-e289ac412b9c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjQ4fHxwcm9maWx8ZW58MHx8MHx8fDA%3D" class="freelance-avatar" alt="Babacar Niang">
          </div>
         <h5 class="freelance-name">Babacar Niang</h5>
-        <p class="freelance-title">Expert en marketing</p>
+        <p class="freelance-title">Marketing spécialiste</p>
         <span class="freelance-exp">12 ans d'expérience</span>
-        <p class="freelance-desc">Spécialiste en JS React avec 8ans d'expérience dans la création d'application Fintech sécurisées </p>
+        <p class="freelance-desc">Expert en marketing avec 12 ans d'expérience dans le developpement de stratégies de croissance éfficace. </p>
        <div class="freelance-stars mb-3">
          <i class="bi bi-star-fill fs-4"></i>
            <i class="bi bi-star-fill fs-4"></i>
@@ -249,16 +252,16 @@
     </div>
 
 
-    <div class="col-12 col-md-6 col-lg-4 mb-4">
-      <div class="water-card freelance-card p-4">
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="water-card freelance-card p-4 h-100"  data-category="chef" data-level="senior">
          <span class="freelance-badge text-center">Top-freelance</span>
          <div class="freelance-avatar-container my-3">
-          <img src="https://images.unsplash.com/photo-1756806885486-e289ac412b9c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjQ4fHxwcm9maWx8ZW58MHx8MHx8fDA%3D" class="freelance-avatar" alt="Aminata Gueye">
+          <img src="https://images.unsplash.com/photo-1756806885486-e289ac412b9c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjQ4fHxwcm9maWx8ZW58MHx8MHx8fDA%3D" class="freelance-avatar" alt="Mamadou Diallo">
          </div>
         <h5 class="freelance-name">Mamadou Diallo</h5>
         <p class="freelance-title">Chef de projet</p>
         <span class="freelance-exp">8 ans d'expérience</span>
-        <p class="freelance-desc">Spécialiste en JS React avec 8ans d'expérience dans la création d'application Fintech sécurisées </p>
+        <p class="freelance-desc">Chef de projet avec 8 ans d'experience dans la gestion et la coordination de projet innovants.</p>
        <div class="freelance-stars mb-3">
         <i class="bi bi-star-fill fs-4"></i>
            <i class="bi bi-star-fill fs-4"></i>
@@ -270,16 +273,16 @@
       </div>
     </div>
 
-    <div class="col-12 col-md-6 col-lg-4 mb-4">
-      <div class="water-card freelance-card p-4">
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="water-card freelance-card p-4 h-100"  data-category="marketing" data-level="junior">
          <span class="freelance-badge text-center">Top-freelance</span>
          <div class="freelance-avatar-container my-3">
-          <img src="https://images.unsplash.com/photo-1756806885486-e289ac412b9c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjQ4fHxwcm9maWx8ZW58MHx8MHx8fDA%3D" class="freelance-avatar" alt="Aminata Gueye">
+          <img src="https://images.unsplash.com/photo-1756806885486-e289ac412b9c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjQ4fHxwcm9maWx8ZW58MHx8MHx8fDA%3D" class="freelance-avatar" alt="Albert Sagna">
          </div>
         <h5 class="freelance-name">Albert Sagna</h5>
         <p class="freelance-title">Marketing digital</p>
         <span class="freelance-exp">5 ans d'expérience</span>
-        <p class="freelance-desc">Spécialiste en JS React avec 8ans d'expérience dans la création d'application Fintech sécurisées </p>
+        <p class="freelance-desc">Expert en marketing digital avec 5 ans d'expérience en acquisition,conversion et visibilité en ligne.</p>
        <div class="freelance-stars mb-3">
         <i class="bi bi-star-fill fs-4"></i>
            <i class="bi bi-star-fill fs-4"></i>
