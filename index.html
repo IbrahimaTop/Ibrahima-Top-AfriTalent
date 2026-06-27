@@ -1,327 +1,372 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acceuil</title>
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<!-- 
+	====================================== -->
+	<!-- METHADONNEES -->
+	<!--
+	====================================== -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Accueil</title>
+	<!-- 
+	====================================== -->
+	<!-- FEUILLES DE STYLE -->
+	<!--
+	====================================== -->
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+	<!-- Bootstrap Icons -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+	<!-- Fichier CSS -->
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<!-- 
+	====================================== -->
+	<!-- GOOGLE FONTS -->
+	<!--
+	====================================== -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		rel="stylesheet">
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar fixed-top"> 
-         <div class="container">    
-          <a class="navbar-brand d-flex align-items-center" href="index.html">
-            <i class="bi bi-globe-americas"></i>
-            <span class="logo-text">Afri<span>Talent</span></span>
-          </a>
-               <button class="navbar-toggler" type="button" 
-                  data-bs-toggle="collapse"
-                  data-bs-target="#navMenu"
-                  aria-controls="navMenu" 
-                  aria-expanded="false" 
-                  aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-              </button>  
-            <div class="collapse navbar-collapse" id="navMenu"> 
-                <ul class="navbar-nav ms-auto fw-bold"> 
-                    <li class="nav-item"><a class="nav-link active" 
-                    href="index.html">Accueil</a></li> 
-                    <li class="nav-item"><a class="nav-link" 
-                    href="freelances.html">Freelances</a></li> 
-                    <li class="nav-item"><a class="nav-link" 
-                    href="tarifs.html">Tarifs</a></li> 
-                    <li class="nav-item"><a class="nav-link" href="about.html">A 
-                    propos</a></li> 
-                    <li class="nav-item"><a class="nav-link" 
-                    href="blog.html">Blog</a></li> 
-                    <li class="nav-item"><a class="nav-link" 
-                    href="contact.html">Contact</a></li>
-                    <button id="theme-toggle" class="btn btn-outline-secondary btn-sm mx-2">mode</button>
-                    <li class="nav-item ms-lg-3"><a class="nav-btn-cta" href="contact.html">Rejoindre AfriTalent</a></li>
-              </ul> 
-            </div> 
-         </div> 
-    </nav> 
-<!-- Contenu principal --> 
+	<!-- 
+====================================== -->
+	<!-- BARRE DE NAVIGATION -->
+	<!--
+ ====================================== -->
+	<nav class="navbar navbar-expand-lg navbar-dark custom-navbar fixed-top">
+		<div class="container">
+			<!-- Logo -->
+			<a class="navbar-brand d-flex align-items-center" href="index.html">
+				<i class="bi bi-globe-americas"></i>
+				<span class="logo-text">Afri<span>Talent</span></span>
+			</a>
+			<!-- Bouton menu mobile -->
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+				aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<!-- Bouton menu principale -->
+			<div class="collapse navbar-collapse" id="navMenu">
+				<ul class="navbar-nav ms-auto fw-bold">
+					<!-- Liens de navigation -->
+					<li class="nav-item"><a class="nav-link active" href="index.html">Accueil</a></li>
+					<li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
+					<li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
+					<li class="nav-item"><a class="nav-link" href="about.html">A
+							propos</a></li>
+					<li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+					<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+					<!-- Bouton théme -->
+					<li class="nav-item"><button id="theme-toggle" class="btn btn-outline-secondary btn-sm mx-2"><i
+								class="bi bi-lightbulb-fill fs-4"></i></button></li>
+					<li class="nav-item ms-lg-3"><a class="nav-btn-cta" href="contact.html">Rejoindre AfriTalent</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- 
+====================================== -->
+	<!-- CONTENU PRINCIPAL -->
+	<!--
+====================================== -->
 <main>
-    <section class="hero-section">
-    <div class="hero-overlay">
-        <div class="container hero-content-container">
-            <div class="hero-content">
-        <h1 class="hero-title fw-bold mb-4">Retrouvez les meilleurs freelances sur AfriTalent </h1>
-        <p class="hero-description lead mb-5">Découvrez les meilleurs plateformes pour trouver des freelances ou des opprtunités</p>
-        <div class="hero-btns d-flex flex-column flex-sm-row justify-content-center gap-3">
-            <a href="freelances.html" class="btn-hero-cta fw-bold">Je suis freelance</a>
-            <a href="tarifs.html" class="btn-hero-cta fw-bold">Je cherche un freelance</a>
-        </div>
+<!-- 
+====================================== -->
+<!-- SECTION HERO -->
+<!--
+====================================== -->
+<section class="hero-section">
+			<div class="hero-overlay">
+				<div class="container hero-content-container">
+					<div class="hero-content">
+						<!-- Titre -->
+						<h1 class="hero-title fw-bold mb-4">Retrouvez les meilleurs freelances sur AfriTalent </h1>
+						<!-- Description -->
+						<p class="hero-description lead mb-5">Découvrez les meilleures plateformes pour trouver des
+							freelances ou des opportunités professionnelles.</p>
+						<!-- Boutons -->
+						<div class="hero-btns d-flex flex-column flex-sm-row justify-content-center gap-3">
+							<a href="freelances.html" class="btn-hero-cta fw-bold">Je suis freelance</a>
+							<span
+								class=" hero-btn-separator px-3 text-white align-items-center d-flex fw-bold">et</span>
+							<a href="tarifs.html" class="btn-hero-cta fw-bold">Je cherche un freelance</a>
+						</div>
+						<!-- Statistiques -->
+						<div class="row g-4  justify-content-center hero-stats-row">
+							<div class="col-6 col-md-4">
+								<div class="stat-box water-card">
+									<span class="stat-number d-block display-6 fw-bold" data-target="2500">0</span>
+									<small class="text-white-50">Freelances</small>
+								</div>
+							</div>
 
-        <div class="row g-4  justify-content-center hero-stats-row fade-in">
-            <div class="col-6 col-md-4">
-                <div class="stat-box water-card">
-                <span class="stat-number d-block display-6 fw-bold text-info" data-target="3000">0</span>
-                <small class="text-white-50">Freelances</small>
-            </div>
-        </div>
-        
-            <div class="col-6 col-md-4">
-                <div class="stat-box water-card">
-                <span class="stat-number d-block display-6 fw-bold text-info" data-target="500">0</span>
-                <small class="text-white-50">Entreprise</small>
-            </div>
-        </div>
-           
-            <div class="col-12 col-md-4">
-                <div class="stat-box water-card">
-                <span class="stat-number d-block display-6 fw-bold text-info" data-target="700">0</span>
-                <small class="text-white-50">Missions</small>
-            </div>
-        </div>
-      </div>
-    </div>
+							<div class="col-6 col-md-4">
+								<div class="stat-box water-card">
+									<span class="stat-number d-block display-6 fw-bold" data-target="800">0</span>
+									<small class="text-white-50">Entreprise</small>
+								</div>
+							</div>
+
+							<div class="col-12 col-md-4">
+								<div class="stat-box water-card">
+									<span class="stat-number d-block display-6 fw-bold" data-target="1200">0</span>
+									<small class="text-white-50">Missions</small>
+							</div>
+						</div>
+					</div>
+			  </div>
+		 </div>
+	 </div>
 </section>
+		<!-- 
+====================================== -->
+		<!-- COMMENT ÇA MARCHE -->
+		<!--
+====================================== -->
+		<section class="container py-5">
+			<div class="text-center mb-5">
+				<h2 class="h2 fw-bold">Comment ça marche ?</h2>
+				<p>Une méthode simple et fluide pour concrétiser vos projets.</p>
+			</div>
+			<div class="bento-grid">
+				<div class="bento-card water-card">
+					<div class="bento-icon mb-3"><i class="bi bi-search fs-2"></i></div>
+					<h3>2.Trouver un projet</h3>
+					<p class="bento-card-desc">Explorez les missions disponibles adaptés à vos compétences uniques ou
+						déposez votre besoin pour attirer des experts.</p>
+				</div>
+				<div class="bento-card water-card">
+					<div class="bento-icon mb-3"><i class="bi bi-people-fill fs-2"></i></div>
+					<h3>3.Collaborer</h3>
+					<p class="bento-card-desc">Travaillez facilement avec les meilleurs talents dans un espace sécurisé.
+					</p>
+				</div>
+				<div class="bento-card water-card">
+					<div class="bento-icon mb-3"><i class="bi bi-credit-card-fill fs-2"></i></div>
+					<h3>4.Paiement sécurisé</h3>
+					<p class="bento-card-desc">Recevez ou envoyez vos paiements en toute sérénité dés la validation des
+						livrables de votre mission.</p>
+				</div>
+				<div class="bento-card water-card">
+					<div class="bento-icon mb-3"><i class="bi bi-person-plus-fill fs-2"></i></div>
+					<h3>1.Créer un compte</h3>
+					<p class="bento-card-desc">Inscrivez vous gratuitement sur la plateforme.</p>
+				</div>
+			</div>
+		</section>
+		<!-- 
+====================================== -->
+		<!-- CATEGORIE DE SERVICE -->
+		<!--
+====================================== -->
+		<section class="container py-5">
+			<div class="text-center mb-5">
+				<h2 class="h2 fw-bold">Catégories</h2>
+				<p>Découvrez les domaines d'expertises de nos experts</p>
+			</div>
+			<div class="row g-4">
+				<!-- Catégorie 1 -->
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="water-card p-4 text-center service-card">
+						<div class="service-icon mb-3"><i class="bi bi-code-slash service-icon fs-3"></i></div>
+						<h3>Developpment web</h3>
+						<p>700 freelances</p>
+					</div>
+				</div>
+				<!-- Catégorie 2 -->
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="water-card p-4 text-center service-card">
+						<div class="service-icon mb-3"><i class="bi bi-vector-pen service-icon fs-3"></i></div>
+						<h3>UI/UX Design</h3>
+						<p>900 freelances</p>
+					</div>
+				</div>
+				<!-- Catégorie 3 -->
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="water-card p-4 text-center service-card">
+						<div class="service-icon mb-3"><i class="bi bi-megaphone service-icon fs-3"></i></div>
+						<h3>Marketing digital</h3>
+						<p>600 freelances</p>
+					</div>
+				</div>
+				<!-- Catégorie 4 -->
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="water-card p-4 text-center service-card">
+						<div class="service-icon mb-3"><i class="bi bi-megaphone service-icon fs-3"></i></div>
+						<h3>Rédaction</h3>
+						<p>180 freelances</p>
+					</div>
+				</div>
+				<!-- Catégorie 5 -->
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="water-card p-4 text-center service-card">
+						<div class="service-icon mb-3"><i class="bi bi-cloud-check service-icon fs-3"></i></div>
+						<h3>DevOps & Cloud</h3>
+						<p>300 freelances</p>
+					</div>
+				</div>
+				<!-- Catégorie 6 -->
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="water-card p-4 text-center service-card">
+						<div class="service-icon mb-3"><i class="bi bi-cpu service-icon fs-3"></i></div>
+						<h3>Data & IA</h3>
+						<p>110 freelances</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- 
+====================================== -->
+		<!-- LES TEMOIGNAGES -->
+		<!--
+====================================== -->
+		<section class="container py-5">
+			<div class="text-center mb-5">
+				<h2 class="h2 fw-bold">Témoignages</h2>
+				<p>Découvrez ce que pensent nos utilisateurs.</p>
+			</div>
+			<!-- Carousel bootstrap -->
+			<div id="africarousel" class="carousel  slide" data-bs-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-8 col-lg-6">
+								<div class="water-card p-5 text-center">
+									<div class="avatar-container mb-3">
+										<img src="https://as1.ftcdn.net/v2/jpg/05/16/27/58/1000_F_516275801_f3Fsp17x6HQK0xQgDQEELoTuERO4SsWV.jpg"
+											alt="Saly Diallo">
+									</div>
+									<p class=" mb-4">AfriTalent m'a permis de trouver des clients sérieux
+										rapidement. Plateforme excellente !
+									</p>
+									<h3>Saly Diallo</h3>
+									<small class="text-primary">Developpeuse Web, Dakar</small>
+								</div>
+							</div>
+						</div>
+					</div>
 
-<section class="container py-5">
-    <div class="text-center mb-5">
-    <h2 class="h2 fw-bold text-white">Comment ça marche ?</h2>
-    <p>Une méthode simple et fluide pour concrétiser vos projets.</p>
-    </div>
-        <div class="bento-grid">
-             <div class="bento-card water-card">
-                <div class="bento-icon mb-3"><i class="bi bi-search fs-2"></i></div>
-            <h3 class=" text-white mb-2">2.Trouver un projet</h3>
-            <p class="text-white-50 mb-0">Explorez les missions disponibles adaptés à vos compétences uniques ou déposez votre besoin pour attirer des experts.</p>
-        </div>
-            <div class="bento-card water-card">
-                <div class="bento-icon mb-3"><i class="bi bi-people-fill fs-2"></i></div>
-            <h3 class=" text-white mb-2">3.Collaborer</h3>
-            <p class="text-white-50 mb-0">Travaillez facilement avec les meilleurs talents dans un espace sécurisé.</p>
-        </div>
-        <div class="bento-card water-card">
-                <div class="bento-icon mb-3"><i class="bi bi-credit-card-fill fs-2"></i></div>
-            <h3 class=" text-white mb-2">4.Paiement sécurisé</h3>
-            <p class="text-white-50 mb-0">Recevez ou envoyez vos paiements en toute sérénité dés la validation des livrables de votre mission.</p>
-            </div>
-        <div class="bento-card water-card">
-                <div class="bento-icon mb-3"><i class="bi bi-person-plus-fill fs-2"></i></div>
-            <h3 class=" text-white mb-2">1.Créer un compte</h3>
-            <p class="text-white-50 mb-0">Inscrivez vous gratuitement sur la plateforme.</p>
-        </div>
-</section>
+					<div class="carousel-item">
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-8 col-lg-6">
+								<div class="water-card p-5 text-center">
+									<div class="avatar-container mb-3">
+										<img src="https://as1.ftcdn.net/v2/jpg/05/16/27/58/1000_F_516275801_f3Fsp17x6HQK0xQgDQEELoTuERO4SsWV.jpg"
+											alt="Salif Dia">
+									</div>
+									<p>J'ai trouvé un excellent désigner en moins de 24h 
+										pour restructurer notre marque.
+										Je vous recommande vivement AfriTalent.
+									</p>
+									<h3>Salif Dia</h3>
+									<small class="text-primary">CEO Tech, Abidjan</small>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#africarousel" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Suivant</span>
+				</button>
 
-<section class="container py-5">
-    <div class="text-center mb-5">
-    <h2 class="h2 text-white fw-bold">Catégories</h2>
-    <p class="text-white-50">Découvrez les domaines d'expertises de nos experts</p>
-    </div>
-    <div class="row g-4">
-        <div class="col-12 col-md-6 col-lg-4">
-            <div class="water-card p-4 text-center service-card">
-            <div class="service-icon mb-3"><i class="bi bi-code-slash text-info fs-3"></i></div>
-                <h4 class="text-white mb-2">Developpment web</h4>
-                <p class="text-white-50 mb-0">700 freelances</p>
-            </div>
-        </div>
+				<button class="carousel-control-next" type="button" data-bs-target="#africarousel" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Suivant</span>
+				</button>
+			</div>
+		</section>
+		<!-- 
+====================================== -->
+		<!-- APPEL A L'ACTION CTA -->
+		<!--
+====================================== -->
+		<section class=" container text-center py-5 my-4">
+			<div class=" p-5 max-width-cta mx-auto">
+				<h2 class="h2 fw-bold mb-3">Rejoignez AfriTalent</h2>
+				<p class=" mb-4">Propulsez votre carrière ou trouvez l'expert idéal en quelques clics.</p>
+				<a href="contact.html" class="btn btn-submit-water  py-3 px-5 fw-bold">S'inscrire</a>
+			</div>
+		</section>
+	</main>
+	<!-- 
+====================================== -->
+	<!-- PIED DE PAGE -->
+	<!--
+====================================== -->
+	<footer class="custom-footer mt-5 py-5">
+		<div class="container">
+			<!-- Colonne du footer -->
+			<div class="row g-4">
+				<!-- Présentation -->
+				<div class="col-12 col-md-6 col-lg-4">
+					<h3 class="fw-bold mb-3">AfriTalent</h3>
+					<p class="text-white-50">La plateforme qui connecte les talents africains aux
+						opportunités freelances dans le monde entier
+					</p>
+				</div>
+				<!-- Liens rapides -->
+				<div class="col-6 col-md-3 col-lg-2">
+					<h4 class="text-white mb-3">Liens</h4>
+					<ul class="list-unstyled footer-links">
+						<li><a href="index.html" class="text-light text-decoration-none">Accueil</a></li>
+						<li><a href="about.html" class="text-light text-decoration-none">A propos</a></li>
+						<li><a href="freelances.html" class="text-light text-decoration-none">Freelance</a></li>
+						<li><a href="tarifs.html" class="text-light text-decoration-none">Tarifs</a></li>
+						<li><a href="blog.html" class="text-light text-decoration-none">Blog</a></li>
+						<li><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
+					</ul>
+				</div>
+				<!-- Support -->
+				<div class="col-6 col-md-3 col-lg-2">
+					<h4 class="text-white mb-3">Support</h4>
+					<ul class="list-unstyled footer-links">
+						<li><a href="" class="text-light text-decoration-none">Aide</a></li>
+						<li><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
+						<li><a href="" class="text-light text-decoration-none">Conditions</a></li>
+					</ul>
+				</div>
+				<!-- Réseaux sociaux -->
+				<div class="col-12 col-md-12 col-lg-4">
+					<h4 class="text-white mb-3">Suivez-nous</h4>
+					<div class="d-flex gap-3 socials-icons">
+						<a href="" class="text-light me-3" aria-label="Facebook"><i class="bi bi-facebook fs-4"></i></a>
+						<a href="" class="text-light me-3" aria-label="Twitter"><i class="bi bi-twitter fs-4"></i></a>
+						<a href="" class="text-light me-3" aria-label="Instagram"><i
+								class="bi bi-instagram fs-4"></i></a>
+						<a href="" class="text-light me-3" aria-label="Linkedin"><i class="bi bi-linkedin fs-4"></i></a>
+					</div>
+				</div>
+			</div>
+			<!-- Copyright -->
+			<div class="border-top border-secondary mt-4 pt-4 text-center">
+				<p class="text-white-50 mb-0">&copy; 2025 AfriTalents. Tous droits réservés.</p>
+			</div>
+		</div>
+	</footer>
+	<!-- 
+====================================== -->
+	<!-- SCRIPTS JAVASCRIPT -->
+	<!--
+====================================== -->
 
-        <div class="col-12 col-md-6 col-lg-4">
-            <div class="water-card p-4 text-center service-card">
-            <div class="service-icon mb-3"><i class="bi bi-vector-pen text-info fs-3"></i></div>
-                <h4 class="text-white mb-2">UI/UX Design</h4>
-                <p class="text-white-50 mb-0">900 freelances</p>
-            </div>
-        </div>
+	<!-- Bootstrap JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-        <div class="col-12 col-md-6 col-lg-4">
-            <div class="water-card p-4 text-center service-card">
-            <div class="service-icon mb-3"><i class="bi bi-megaphone text-info fs-3"></i></div>
-                <h4 class="text-white mb-2">Marketing digital</h4>
-                <p class="text-white-50 mb-0">600 freelances</p>
-            </div>  
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-4">
-            <div class="water-card p-4 text-center service-card">
-            <div class="service-icon mb-3"><i class="bi bi-megaphone text-info fs-3"></i></div>
-                <h4 class="text-white mb-2">Rédaction</h4>
-                <p class="text-white-50 mb-0">180 freelances</p>
-            </div>  
-        </div>
-        
-        <div class="col-12 col-md-6 col-lg-4">
-            <div class="water-card p-4 text-center service-card">
-            <div class="service-icon mb-3"><i class="bi bi-cloud-check text-info fs-3"></i></div>
-                <h4 class="text-white mb-2">DevOps & Cloud</h4>
-                <p class="text-white-50 mb-0">300 freelances</p>
-            </div>
-        </div>
-
-       <div class="col-12 col-md-6 col-lg-4">
-            <div class="water-card p-4 text-center service-card">
-            <div class="service-icon mb-3"><i class="bi bi-cpu text-info fs-3"></i></div>
-                <h4 class="text-white mb-2">Data & IA</h4>
-                <p class="text-white-50 mb-0">110 freelances</p>
-            </div>
-        </div>
-     </div>
-</section>
-
-<section class="container py-5">
-    <div class="text-center mb-5">
-        <h2 class=" fw-bold text-white">Temoignages</h2>
-        <p class="text-white-50">Découvrez ce que pensent nos utilisateurs.</p>
-    </div>
-
-    <div id="africarousel" class="carousel  slide" data-bs-ride="carousel">
-               <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="row justify-content-center">
-                        <div class="col-12 col-md-8 col-lg-6">
-                            <div class="water-card p-5 text-center">
-                            <p class=" text-white mb-4">AfriTalent m'a permis de trouver des clients sérieux
-                            rapidement. Plateforme excellente !
-                        </p>
-                        <h5 class="text-white mb-1">Saly Diallo</h5>
-                        <small class="text-info">Developpeuse Web, Dakar</small>
-                    </div>
-                  </div>
-                </div>
-             </div>
-
-                <div class="carousel-item">
-                    <div class="row justify-content-center">
-                        <div class="col-12 col-md-8 col-lg-6">
-                            <div class="water-card p-5 text-center position relative">
-                            <p class=" text-white mb-4">J'ai trouvé un excellent désigner en moins de 24h pour restructurer notre marque. Je vous recommande vivement AfriTalent
-                        <h5 class="text-white mb-1">Salif Dia</h5>
-                        <small class="text-info">CEO Tech, Abidjan</small>
-                    </div>
-                  </div>
-                </div>
-             </div>
-           </div>
-             <button class="carousel-control-prev" type="button" data-bs-target="#africarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Suivant</span>
-            </button>
-
-             <button class="carousel-control-next" type="button" data-bs-target="#africarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Suivant</span>
-            </button>
-            </div>
-</section>
-<section class=" container text-center py-5 my-4">
-    <div class=" p-5 max-width-cta mx-auto">
-        <h2 class=" fw-bold text-white mb-3">Rejoignez AfriTalent</h2>
-        <p class="text-white-50 mb-4">Propulsez votre carriére ou trouvez de l'expert idéal en quelques clics.</p>
-    <a href="contact.html" class="btn btn-submit-water  py-3 px-5 fw-bold">S'inscrire</a>
-    </div>
-</section>
-</main>
-
-<!-- Pied de page --> 
-<footer class="custom-footer mt-5 py-5"> 
-   <div class="container">
-    <div class="row g-4">
-        <div class="col-12 col-md-6 col-lg-4">
-            <h5 class="text-white fw-bold mb-3">AfriTalent</h5>
-            <p class="text-white-50">La plateforme qui connecte les talents africains aux 
-                opportunités freelances dans le monde entier
-            </p>
-        </div>
-        <div class="col-6 col-md-3 col-lg-2">
-            <h5 class="text-white mb-3">Liens</h5>
-            <ul class="list-unstyled footer-links">
-               <li><a href="index.html" class="text-light text-decoration-none">Acceuil</a></li>
-               <li><a href="about.html" class="text-light text-decoration-none">A propos</a></li>
-               <li><a href="freelances.html" class="text-light text-decoration-none">Freelance</a></li>
-               <li><a href="tarifs.html" class="text-light text-decoration-none">Tarifs</a></li>
-               <li><a href="blog.html" class="text-light text-decoration-none">Blog</a></li>
-               <li><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
-            </ul>
-        </div>
-       <div class="col-6 col-md-3 col-lg-2">
-        <h6 class="text-white mb-3">Support</h6>
-        <ul class="list-unstyled footer-links">
-            <li><a href="" class="text-light text-decoration-none">Aide</a></li>
-            <li><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
-            <li><a href="" class="text-light text-decoration-none">Condition</a></li>
-        </ul>
-       </div>
-
-       <div class="col-12 col-md-12 col-lg-4">
-        <h6 class="text-white mb-3">Suivez-nous</h6>
-        <div class="d-flex gap-3 socials-icons">
-            <a href="" class="text-light me-3"><i class="bi bi-facebook"></i></a>
-            <a href="" class="text-light me-3"><i class="bi bi-twitter"></i></a>
-            <a href="" class="text-light me-3"><i class="bi bi-instagram"></i></a>
-           <a href="" class="text-light me-3"><i class="bi bi-linkedin"></i></a>
-        </div>
-       </div>
-      </div>
-      <div class="border-top border-secondary mt-4 pt-4 text-center">
-        <p class="text-white-50 mb-0">&copy; 2025 Afrique. Tous droits reserves.</p>
-    </div>
-</div>
-</footer> 
-
-        
-<script 
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-></script> 
-
-<script src="js/main.js"></script>
-
+	<script src="js/main.js"></script>
 
 </body>
+
 </html>
-
-                   
-
- 
-
-    
-   
-
-
-
-
- 
-
-
-
-
- 
-
-
-
-           
-           
-           
-           
-            
-    
-    
-      
-
-
-
-
- 
-
-
-        
-
- 
-
-
-
- 
-
-
